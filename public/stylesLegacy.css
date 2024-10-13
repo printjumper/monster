@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.imageLogo {
+	object-fit: fill;
+	width: 50px;
+	height: 50px;
+}
+
+.header {
+	display: flex;
+	justify-content: left;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	background: #2596be;
+	width: 100%;
+	height: 70px
+}
+
+.topDiv {
+	display: flex;
+	gap: 40px;
+	padding: 30px 30px;
+	color: white;
+	width: 100%;
+	/*	min-height: 200px;*/
+	position: relative;
+	background: purple;
+	text-align: center;
+	justify-content: center;
+}
+
+
+.imageContainer {
+	background: #2e7d37;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px 20px;
+}
+
+
+.image300px {
+	object-fit: cover;
+	width: 300px;
+	height: 300px;
+}
+
+
+.button-stylish {
+	text-align: center;
+	border: 2px solid white;
+	width: 300px;
+	padding: 10px 10px;
+	/*	margin-top: 20px;*/
+	background-color: #007BFF;
+	color: white;
+	border-radius: 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-stylish:hover {
+	background-color: #0056b3;
+	transform: scale(1.05);
+}
+
+.button-stylish:active {
+	background-color: #004085;
+	transform: scale(0.95);
+}
+
+
+.containerStyle {
+	display: flex; /* Makes the container a flex container */
+	justify-content: center; /* Horizontally centers children */
+	align-items: center; /* Vertically centers children */
+	flex-direction: column; /* Stacks children vertically */
+	border: 2px solid black; /* Border around the container */
+	padding: 20px; /* Space between container border and children */
+	margin: 10px; /* Space between container and other elements */
+	width: 80%; /* Container width relative to its parent */
+	height: 300px; /* Fixed height */
+}
+
+.childStyle {
+	color: blue; /* Text color */
+	margin: 5px; /* Space between this element and others */
+	padding: 10px; /* Space inside the element, around its content */
+	border-radius: 10px; /* Rounded corners */
+	background-color: lightgray; /* Background color */
+	text-align: center; /* Centers text horizontally */
+}
+
+@media (min-width: 1900px) {
+	body {
+		background-color: lightgreen
+	}
+
+	.mainContainer {
+		background-color: #2596be
+	}
+}
